@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #D5B28D; /* Gold */
+  --secondary-color: #242527; /* Black */
+  --tertiary-color: #FFFFFF; /* White */
+  --bg-gray-color: #F6F6F6; /* Gray Bg */
+  --brown-color: #5B4337; /* Dark Blue */
+  --font-fejaUnion: 'Space-Grotesk', Helvetica, sans-serif;
+  --font-fejaUnion-secondary: 'Roboto', Helvetica, sans-serif;
+  --font-fejaUnion-title: 'Magdes', Helvetica, sans-serif;
+  /* --font-section-title: 'Grechen-Fuemen', Helvetica, sans-serif; */
+}
+
+@font-face {
+  font-family: 'Space-Grotesk';
+  src: url('./assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Space-Grotesk-Medium';
+  src: url('./assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Space-Grotesk-SemiBold';
+  src: url('./assets/fonts/space-grotesk/SpaceGrotesk-SemiBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Space-Grotesk-Bold';
+  src: url('./assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Magdes';
+  src: url('./assets/fonts/magdes/magdes-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  font-family: var(--font-fejaUnion-secondary);
+  overflow-x: hidden;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  background: var(--main-btn-gradient);
+  border: none;
+}
+
+/* .btn:hover, .btn:focus, .btn:active {
+  background: linear-gradient(-170deg, rgba(209, 183, 118, 1) 0%, rgba(184, 147, 75, 1) 100%);
+
+  border-color: var(--main-btn-gradient);
+  color: var(--tertiary-color);
+} */
