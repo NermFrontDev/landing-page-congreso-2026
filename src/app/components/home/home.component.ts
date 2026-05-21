@@ -1,22 +1,28 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import Aos from 'aos';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
+import * as Aos from 'aos';
+import { FooterComponent } from '../../shared/footer/footer.component';
+
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
 
-  ngOnInit() {
-    Aos.init({
-      once: false,
-      duration: 500,
-      easing: 'ease',
-    });
-  }
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
+  ngOnInit(): void {
+
+    if (isPlatformBrowser(this.platformId)) {
+      Aos.init();
+    }
+
+  }
 }
