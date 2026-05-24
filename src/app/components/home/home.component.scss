@@ -1,0 +1,46 @@
+@import url('../../../styles.scss');
+
+.mt-content{
+    margin-top: 300px;
+}
+
+@font-face{
+    font-family: 'principal-title';
+    src: url("../../../assets/fonts/magdes/magdes-regular.woff2") format('truetype');
+}
+
+h1{
+    font-family: 'principal-title';
+    font-size:90px;
+    font-style:bold;
+}
+
+.bg-hero{
+    background-image: url("../../../assets/images/hero-banner.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:1000px;
+    .bg-hero_content {
+        margin-top: -350px;
+    }
+}
+
+.about-section{
+    height: 500px;
+}
+
+.bg-about{
+    background-image: url("../../../assets/images/about_arbnb.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:2350px;
+    width: 100%;
+}
+
+.space-section{
+    margin-top: -100px;
+}
+
+.img-about{
+    height: 500px;
+}

@@ -1,0 +1,17 @@
+.navbar{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.bg-nav{
+    background-image: url("../../../assets/images/img-nav.svg");
+    /* background-color: aquamarine; */
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 140px;
+    width: 100%;
+    filter: drop-shadow(5px 10px 15px rgba(0, 0, 0, 0.3));
+}
