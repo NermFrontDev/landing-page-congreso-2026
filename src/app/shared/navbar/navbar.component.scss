@@ -15,3 +15,29 @@
     width: 100%;
     filter: drop-shadow(5px 10px 15px rgba(0, 0, 0, 0.3));
 }
+
+.txt-nav{
+    font-style: bold;
+    color: black;   
+}
+
+.btn-nav{
+    border-radius: 5px;
+    background-color: #D5B28D;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+    width: 105px;
+    height: 35px;
+}
+
+.btn-nav:hover{
+    background-color: #c2a88c;
+}
+
+.txt-btn{
+    text-decoration: none;
+    color: white;
+}

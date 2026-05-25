@@ -38,9 +38,26 @@ h1{
 }
 
 .space-section{
-    margin-top: -100px;
+    margin-top: -90px;
 }
 
 .img-about{
     height: 500px;
+}
+
+.bg-prayer{
+    background-image: url("../../../assets/images/prayer-section.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:1000px;
+    width: 100%;
+}
+
+.iasd-img{
+    width: 100%;
+    height: 60px;
+}
+
+.prayer{
+    height: 550px;
 }
