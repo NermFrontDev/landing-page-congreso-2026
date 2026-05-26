@@ -16,7 +16,7 @@ h1{
 }
 
 .bg-hero{
-    background-image: url("../../../assets/images/hero-banner.webp");
+    background-image: url("../../../assets/images/hero-bg.webp");
     background-size:cover;
     background-repeat: no-repeat;
     height:1000px;
@@ -30,7 +30,7 @@ h1{
 }
 
 .bg-about{
-    background-image: url("../../../assets/images/about_arbnb.webp");
+    background-image: url("../../../assets/images/about-bg.webp");
     background-size:cover;
     background-repeat: no-repeat;
     height:2350px;
@@ -45,8 +45,9 @@ h1{
     height: 500px;
 }
 
+/* ---------------- PRAYER SECTION ---------------- */
 .bg-prayer{
-    background-image: url("../../../assets/images/prayer-section.webp");
+    background-image: url("../../../assets/images/prayer-bg.webp");
     background-size:cover;
     background-repeat: no-repeat;
     height:1000px;
@@ -60,4 +61,19 @@ h1{
 
 .prayer{
     height: 550px;
+}
+
+
+/* ---------------- AGENDA SECTION ---------------- */
+.bg-agenda{
+    background-image: url("../../../assets/images/agenda-bg.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:1000px;
+    width: 100%;
+}
+
+h6{
+    color: #9D744A;
+    font-style: bold;
 }
