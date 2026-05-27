@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
   imports: [
     RouterOutlet,
     NavbarComponent,
-    FooterComponent
+    HttpClientModule,
 
   ],
   templateUrl: './app.component.html',

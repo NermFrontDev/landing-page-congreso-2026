@@ -7,26 +7,90 @@
     </section>
 </div>
 
-<div class="d-flex bg-about space-section justify-content-center">
-    <section id="evento" class="mt-content about-section">
+<div class="d-flex flex-column bg-about space-section align-items-center justify-content-start" id="evento">
+    <section class="mt-content about-section">
         <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
             <div class="col-6 d-flex justify-content-center align-items-center">
                 <img src="../../../assets/images/about-img.webp" alt="" class="img-about">
             </div>
-            <div class="col-4 d-flex flex-column justify-content-center align-items-start">
-                <h3>Congreso</h3>
-                <h2>Juvenil "S.A.N.A.R"</h2>
+            <div class="col-5 d-flex flex-column justify-content-center align-items-start">
+                <h3 class="font-space">Congreso</h3>
+                <h4 class="font-space font-60">Juvenil "S.A.N.A.R"</h4>
                 <p>El modelo S.A.N.A.R. garantiza que cada actividad, desde la predicación más solemne hasta el juego más dinámico, tenga una razón de ser dentro del ecosistema del congreso.
                 </p>
             </div>
         </div>
     </section>
-    <section id="hospedaje" class="">
-        <div>
-            <div>
+    <section class="mt-content col-9">
+      <div class="carousel-section container" id="hospedaje">
+        <div class="carousel-header" data-aos="fade-down">
+          <div class="header-text">
+            <h2>Alojamientos populares en Phoenix</h2>
+            <p>Ofrecemos una lista de los Airbnb más cercanos para disfrutar de este increíble evento.</p>
+          </div>
 
-            </div>
+          <div class="carousel-controls" *ngIf="listings.length > 0">
+            <button class="control-btn" (click)="prev()" [disabled]="currentIndex === 0" aria-label="Anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button class="control-btn" (click)="next()" [disabled]="currentIndex === maxIndex" aria-label="Siguiente">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
+
+        <div class="carousel-container" data-aos="fade-up">
+          <div class="carousel-track" [style.--current-index]="currentIndex">
+
+            @for (item of listings; track item.id) {
+            <a href="{{ item.url }}" class="card-alojamiento" target="_blank" rel="noopener noreferrer">
+              <div class="card-image">
+                <img [src]="item.thumbnail" [alt]="item.title" loading="lazy" class="rounded-4">
+              </div>
+              <div class="card-content">
+                <span class="card-price">{{ item.price.breakDown.basePrice.description }}</span>
+                <h3 class="card-title my-3" [title]="item.title">{{ item.title }}</h3>
+
+                <div class="card-amenities">
+                  <div class="amenity">
+                    <img src="assets/images/airbnb/svg_1.svg" alt="Icon 1">
+                    <div class="amenity-info">
+                      <span class="label">Rating</span>
+                      <span class="value">{{ item.rating.guestSatisfaction }}%</span>
+                    </div>
+                  </div>
+
+                  <div class="amenity">
+                    <img src="assets/images/airbnb/svg_2.svg" alt="Icon 2">
+                    <div class="amenity-info">
+                      <span class="label">Reviews</span>
+                      <span class="value">{{ item.rating.reviewsCount }}</span>
+                    </div>
+                  </div>
+
+                  <div class="amenity">
+                    <img src="assets/images/airbnb/svg_3.svg" alt="Icon 3">
+                    <div class="amenity-info">
+                      <span class="label">Ubicación</span>
+                      <span class="value">{{ ($any(item)).preciseLocation || 'Cargando...' }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            } @empty {
+            <div class="carousel-loading">
+              <p>Cargando alojamientos disponibles...</p>
+            </div>
+            }
+
+          </div>
+        </div>
+      </div>
     </section>
 </div>
 
@@ -41,7 +105,6 @@
                 </p>
             </div>
             <div>
-                
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center">
                 <img class="prayer" src="../../../assets/images/prayer.webp" alt="">
@@ -55,7 +118,7 @@
         <div class="container justify-content-center text-center">
             <h6>Cronograma y</h6>
             <h2>Agenda de actividades</h2>
-            <p>Nuestro cronograma está diseñado para equilibrar crecimiento espiritual, aprendizaje, comunidad y diversión. 
+            <p>Nuestro cronograma está diseñado para equilibrar crecimiento espiritual, aprendizaje, comunidad y diversión.
                 Revisa los horarios, llega a tiempo y prepárate a vivir una experiencia que marcará tu vida.
             </p>
         </div>

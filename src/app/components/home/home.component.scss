@@ -1,5 +1,13 @@
 @import url('../../../styles.scss');
 
+.font-space{
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-60{
+  font-size: 60px;
+}
+
 .mt-content{
     margin-top: 300px;
 }
@@ -45,6 +53,193 @@ h1{
     height: 500px;
 }
 
+/* ---------------- CAROUSEL SECTION ---------------- */
+$gap: 24px;
+$items-per-view: 3;
+
+.carousel-section {
+  /* padding: 80px 40px;
+  background: linear-gradient(135deg, #e3edf7 0%, #cbdcf2 100%); */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow: clip;
+
+  .carousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 80px;
+    flex-direction: row;
+
+    .header-text {
+      h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #1a202c;
+        margin: 0 0 10px 0;
+      }
+      p {
+        font-size: 1.1rem;
+        color: #4a5568;
+        margin: 0;
+      }
+    }
+
+    .carousel-controls {
+      display: flex;
+      gap: 12px;
+
+      .control-btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        color: #2d3748;
+
+        svg {
+          width: 22px;
+          height: 22px;
+        }
+
+        &:hover:not(:disabled) {
+          background-color: #ffffff;
+          transform: scale(1.05);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        &:disabled {
+          opacity: 0.35;
+          cursor: not-allowed;
+          transform: scale(1) !important;
+        }
+      }
+    }
+  }
+
+  .carousel-container {
+    width: 100%;
+    overflow: clip;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: $gap;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    transform: translateX(calc(-1 * var(--current-index) * (100% + #{$gap}) / #{$items-per-view}));
+  }
+
+  .card-alojamiento {
+    flex: 0 0 calc((100% - (#{$items-per-view} - 1) * #{$gap}) / #{$items-per-view});
+    background: #ffffff96;
+    border: 2px solid #ced6fe87;
+    border-radius: 24px;
+    overflow: clip;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+
+    /* &:hover {
+      transform: translateY(-4px);
+    } */
+
+    .card-image {
+      width: 100%;
+      height: 300px;
+      /* overflow: hidden; */
+      /* background-color: #edf2f7; */
+      padding: 15px;
+      /* border-radius: 24px; */
+
+      img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+
+    .card-content {
+      padding: 0 24px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      .card-price {
+        font-size: 0.9rem;
+        color: #606676;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      .card-title {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #1a202c;
+        /* margin: 0 0 20px 0; */
+        min-height: 44px; // Asegura que títulos de 1 o 2 líneas mantengan alineadas las tarjetas
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.4;
+      }
+
+      .card-amenities {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #edf2f7;
+        padding-top: 16px;
+        margin-top: auto; // Empuja las amenities siempre al fondo de la tarjeta
+
+        .amenity {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          .icon {
+            width: 18px;
+            height: 18px;
+            color: #5a4af4;
+          }
+
+          .amenity-info {
+            display: flex;
+            flex-direction: column;
+
+            .label {
+              font-size: 0.75rem;
+              color: #a0aec0;
+            }
+
+            .value {
+              font-size: 0.85rem;
+              font-weight: 600;
+              color: #2d3748;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel-loading {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    color: #718096;
+    font-size: 1.1rem;
+  }
+}
+
+
 /* ---------------- PRAYER SECTION ---------------- */
 .bg-prayer{
     background-image: url("../../../assets/images/prayer-bg.webp");
@@ -66,14 +261,14 @@ h1{
 
 /* ---------------- AGENDA SECTION ---------------- */
 .bg-agenda{
-    background-image: url("../../../assets/images/agenda-bg.webp");
-    background-size:cover;
-    background-repeat: no-repeat;
-    height:1000px;
-    width: 100%;
+  background-image: url("../../../assets/images/agenda-bg.webp");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:1000px;
+  width: 100%;
 }
 
 h6{
-    color: #9D744A;
-    font-style: bold;
+  color: #9D744A;
+  font-style: bold;
 }

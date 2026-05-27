@@ -1,8 +1,14 @@
 .navbar{
     position: fixed;
     z-index: 999;
-    width: 100%;
+    /* width: 100%; */
     margin-top: -10px;
+}
+
+.navbar-brand .logo {
+  width: 80px;
+  height: auto;
+  max-width: 100%;
 }
 
 .bg-nav{
@@ -18,7 +24,7 @@
 
 .txt-nav{
     font-style: bold;
-    color: black;   
+    color: black;
 }
 
 .btn-nav{
