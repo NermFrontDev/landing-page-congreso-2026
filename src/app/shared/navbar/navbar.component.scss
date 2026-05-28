@@ -1,3 +1,14 @@
+@import '../../../styles.scss';
+
+div#staticBackdrop {
+  width: 50%;
+}
+
+.btn-menu img {
+  width: 40px;
+  height: 40px;
+}
+
 .navbar{
     position: fixed;
     z-index: 999;
@@ -47,4 +58,10 @@
 .txt-btn{
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 991px) {
+  div#staticBackdrop {
+    width: 70%;
+  }
 }

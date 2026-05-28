@@ -4,20 +4,41 @@
       <a class="navbar-brand m-0" href="#inicio">
         <img src="../../../assets/images/logo-fesja.webp" alt="Logo Fesja Az" loading="lazy" class="logo" />
       </a>
-      <div class="navbar-nav gap-3">
-        <a class="nav-link txt-nav" href="#inicio">Inicio</a>
-        <a class="nav-link txt-nav" href="#evento">Evento</a>
-        <a class="nav-link txt-nav" href="#hospedaje">Hospedaje</a>
-        <a class="nav-link txt-nav" href="#orador">Orador</a>
-        <a class="nav-link txt-nav" href="#agenda">Agenda</a>
-        <a class="nav-link txt-nav" href="#testimonios">Testimonios</a>
-        <a class="nav-link txt-nav" href="#preguntas">Preguntas</a>
+      <div class="navbar-nav gap-3 d-none d-lg-flex">
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#inicio">Inicio</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#evento">Evento</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#hospedaje">Hospedaje</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#orador">Orador</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#agenda">Agenda</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#testimonios">Testimonios</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#preguntas">Preguntas</a>
       </div>
       <div class="cta-nav">
         <button class="btn-nav" disabled>
-          <a class="txt-btn" href="#">Muy pronto</a>
+          <a class="txt-btn fs-6" href="#">Muy pronto</a>
         </button>
+      </div>
+      <div class="d-md-block d-lg-none">
+        <a class="btn btn-primary btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          <img src="../../../assets/images/icons/menu-burguer.svg" alt="Menu Icon" loading="lazy">
+        </a>
       </div>
     </div>
   </div>
 </nav>
+
+<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+  Toggle static offcanvas
+</button> -->
+
+<div class="offcanvas offcanvas-end p-5" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      I will not close if you click outside of me.
+    </div>
+  </div>
+</div>

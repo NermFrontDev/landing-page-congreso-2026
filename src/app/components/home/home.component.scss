@@ -1,5 +1,10 @@
 @import url('../../../styles.scss');
 
+@font-face{
+    font-family: 'principal-title';
+    src: url("../../../assets/fonts/magdes/magdes-regular.woff2") format('truetype');
+}
+
 .font-space{
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -9,28 +14,64 @@
 }
 
 .mt-content{
-    margin-top: 300px;
+  margin-top: 300px;
 }
 
-@font-face{
-    font-family: 'principal-title';
-    src: url("../../../assets/fonts/magdes/magdes-regular.woff2") format('truetype');
-}
 
+/* ======================= DESKTOP STYLES STARTS HERE ======================= */
+/* ------------------ HERO-BANNER ------------------  */
 h1{
-    font-family: 'principal-title';
-    font-size:90px;
-    font-style:bold;
+  font-family: 'principal-title';
+  font-size:90px;
+  font-style:bold;
+}
+section#inicio {
+  overflow-x: hidden;
 }
 
 .bg-hero{
-    background-image: url("../../../assets/images/hero-bg.webp");
-    background-size:cover;
-    background-repeat: no-repeat;
-    height:1000px;
-    .bg-hero_content {
-        margin-top: -350px;
-    }
+  background-image: url("../../../assets/images/hero-bg.webp");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  position: relative;
+  z-index: -5;
+  .bg-hero_content {
+    margin-top: -350px;
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+.clouds-img {
+  position: relative;
+  z-index: 1;
+  .cloud1 {
+    position: absolute;
+    bottom: -10px;
+    width: 470px;
+    left: 170px;
+  }
+  .cloud2 {
+    position: absolute;
+    width: 260px;
+    bottom: 30px;
+    left: 60px;
+  }
+  .cloud3 {
+    position: absolute;
+    bottom: 30px;
+    right: 210px;
+    width: 510px;
+  }
+}
+
+.hero-nosky{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
 }
 
 .about-section{
@@ -38,10 +79,11 @@ h1{
 }
 
 .bg-about{
-    background-image: url("../../../assets/images/about-bg.webp");
+    background-image: url("../../../assets/images/about/info-event.webp");
     background-size:cover;
     background-repeat: no-repeat;
-    height:2350px;
+    /* height:2350px; */
+    height: 3000px;
     width: 100%;
 }
 
@@ -53,7 +95,7 @@ h1{
     height: 500px;
 }
 
-/* ---------------- CAROUSEL SECTION ---------------- */
+/* ------------------ CAROUSEL SECTION ------------------ */
 $gap: 24px;
 $items-per-view: 3;
 
@@ -61,7 +103,7 @@ $items-per-view: 3;
   /* padding: 80px 40px;
   background: linear-gradient(135deg, #e3edf7 0%, #cbdcf2 100%); */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  overflow: clip;
+  overflow: visible;
 
   .carousel-header {
     display: flex;
@@ -239,8 +281,7 @@ $items-per-view: 3;
   }
 }
 
-
-/* ---------------- PRAYER SECTION ---------------- */
+/* ------------------ PRAYER SECTION ------------------ */
 .bg-prayer{
     background-image: url("../../../assets/images/prayer-bg.webp");
     background-size:cover;
@@ -250,7 +291,7 @@ $items-per-view: 3;
 }
 
 .iasd-img{
-    width: 100%;
+    width: auto;
     height: 60px;
 }
 
@@ -258,8 +299,7 @@ $items-per-view: 3;
     height: 550px;
 }
 
-
-/* ---------------- AGENDA SECTION ---------------- */
+/* ------------------ AGENDA SECTION ------------------ */
 .bg-agenda{
   background-image: url("../../../assets/images/agenda-bg.webp");
   background-size:cover;
@@ -271,4 +311,109 @@ $items-per-view: 3;
 h6{
   color: #9D744A;
   font-style: bold;
+}
+
+/* ======================= DESKTOP STYLES END HERE ======================= */
+
+/* ======================= iPAD STYLES STARTS HERE ======================= */
+@media (max-width: 992px) {
+  .bg-hero{
+    background-image: url("../../../assets/images/hero-bg.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    position: relative;
+    z-index: -5;
+    .bg-hero_content {
+      margin-top: -350px;
+      position: absolute;
+      z-index: 0;
+    }
+  }
+  .bg-prayer{
+    height:1200px;
+  }
+
+  .mt-content{
+    margin-top: 150px;
+  }
+
+  .about-section{
+    height: 750px;
+  }
+
+  .clouds-img {
+    .cloud1 {
+      bottom: 160px;
+      width: 470px;
+      left: 70px;
+    }
+
+    .cloud2 {
+      width: 260px;
+      bottom: 10px;
+      left: 160px;
+    }
+
+    .cloud3 {
+      bottom: 160px !important;
+      right: 210px;
+      width: 510px;
+    }
+  }
+
+  .hero-nosky{
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    left: 7px;
+    z-index: 0;
+    width: 185%;
+    height: 100% !important;
+  }
+}
+
+/* ======================= MOBILE STYLES STARTS HERE ======================= */
+@media (max-width: 576px) {
+  .about-section{
+    height: 740px;
+  }
+  .mt-content{
+    margin-top: 150px;
+  }
+  .img-about{
+    height: 350px;
+  }
+  .hero-nosky{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .clouds-img {
+    .cloud1 {
+      bottom: 200px;
+      width: 470px;
+      left: 70px;
+    }
+
+    .cloud2 {
+      width: 260px;
+      bottom: 10px;
+      left: 30px;
+    }
+
+    .cloud3 {
+      bottom: 80px;
+      right: 70px;
+      width: 320px;
+    }
+  }
+  /* ------------------ PRAYER SECTION ------------------ */
+  .prayer{
+    height: 420px;
+  }
 }

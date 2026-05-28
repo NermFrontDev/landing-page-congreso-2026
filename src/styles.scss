@@ -55,6 +55,10 @@ body {
   /* overflow-x: hidden; */
 }
 
+p, span, a, li {
+  font-size: 18px;
+}
+
 .btn-primary {
   background: var(--primary-color);
   background: var(--main-btn-gradient);
