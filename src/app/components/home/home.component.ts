@@ -16,6 +16,12 @@ import * as Aos from 'aos';
 export class HomeComponent implements OnInit {
   listings: AirbnbListing[] = [];
 
+  // Coordenadas de referencia del evento (Phoenix, AZ)
+  readonly EVENT_COORDINATES = {
+    latitude: 33.448377,
+    longitude: -112.074037
+  };
+
   // Variables para el control del carrusel nativo
   currentIndex = 0;
   itemsPerView = 3;
@@ -29,11 +35,24 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.airbnbService.getListings().subscribe({
       next: (data) => {
-        this.listings = data;
+        // 1. Calcular distancia en millas y filtrar/ordenar
+        this.listings = data
+          .map(item => {
+            const distance = this.calculateHaversineDistanceInMiles(
+              this.EVENT_COORDINATES.latitude,
+              this.EVENT_COORDINATES.longitude,
+              item.coordinates.latitude,
+              item.coordinates.longitude
+            );
+            return { ...item, distance }; // Añadimos la propiedad de distancia en millas
+          })
+          .filter(item => item.distance <= 5) // <--- FILTRO: Solo los que están a 5 millas o menos
+          .sort((a, b) => a.distance - b.distance); // Ordenar de más cercano a más lejano
+
         this.updateMaxIndex();
-        this.loadPreciseLocations(); // <--- Llamamos a la traducción de coordenadas
-    },
-    error: (err) => console.error(err)
+        this.loadPreciseLocations();
+      },
+      error: (err) => console.error(err)
     });
 
     if (isPlatformBrowser(this.platformId)) {
@@ -42,6 +61,30 @@ export class HomeComponent implements OnInit {
         once: true,
       });
     }
+  }
+
+  /**
+   * Calcula la distancia en millas entre dos coordenadas usando la fórmula de Haversine
+   */
+  private calculateHaversineDistanceInMiles(lat1: number, lon1: number, lat2: number, lon2: number): number {
+    const EARTH_RADIUS_MILES = 3958.8; // Radio de la tierra en millas
+
+    const dLat = this.degreesToRadians(lat2 - lat1);
+    const dLon = this.degreesToRadians(lon2 - lon1);
+
+    const rLat1 = this.degreesToRadians(lat1);
+    const rLat2 = this.degreesToRadians(lat2);
+
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+              Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(rLat1) * Math.cos(rLat2);
+
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+    return EARTH_RADIUS_MILES * c;
+  }
+
+  private degreesToRadians(degrees: number): number {
+    return degrees * (Math.PI / 180);
   }
 
   updateMaxIndex(): void {
@@ -65,12 +108,11 @@ export class HomeComponent implements OnInit {
       this.airbnbService.getNeighborhood(item.coordinates.latitude, item.coordinates.longitude)
         .subscribe({
           next: (geoData) => {
-            // Nominatim suele devolver el barrio en 'neighbourhood', 'suburb' o 'road'
             const address = geoData.address;
             (item as any).preciseLocation = address.neighbourhood || address.suburb || address.city_district || 'Phoenix';
           },
           error: () => {
-            (item as any).preciseLocation = 'Phoenix'; // Fallback por si falla la API
+            (item as any).preciseLocation = 'Phoenix';
           }
         });
     });

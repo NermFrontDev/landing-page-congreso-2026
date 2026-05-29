@@ -45,12 +45,58 @@
             </div>
         </div>
     </section>
+    <section class="container d-flex flex-column align-items-center justify-content-center gap-4 mt-5">
+      <div class="col-10 d-flex flex-column align-items-center justify-content-center gap-2">
+        <h4>El camino de sanidad</h4>
+        <p>Las 5 Fases del Modelo S.A.N.A.R.</p>
+      </div>
+      <div class="row container">
+        <div class="col-4">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item-1">S</a>
+              <a class="nav-link" href="#item-2">A</a>
+              <a class="nav-link" href="#item-3">N</a>
+              <a class="nav-link" href="#item-4">A</a>
+              <a class="nav-link" href="#item-5">R</a>
+            </nav>
+          </nav>
+        </div>
+
+        <div class="col-8">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+            class="scrollspy-example-2" tabindex="0">
+            <div id="item-1">
+              <h4>Suelta - (Viernes por la noche) | La Catarsis Espiritual</h4>
+              <p>El proceso de sanidad exige limpiar el terreno primero. Esta fase está diseñada para llevar a los jóvenes a la renuncia. Se invitará a la audiencia a soltar el peso de la culpa, los vicios, la ansiedad y las falsas expectativas que el mundo les impone. Para que un joven pueda descubrir su verdadera identidad, primero debe despojarse de todo lo que lo ata.</p>
+            </div>
+            <div id="item-2">
+              <h4>Abraza (Sábado por la mañana) | La Consolidación de la Identidad</h4>
+              <p>Un corazón que ha sido vaciado no puede quedar a la deriva. En esta fase, el enfoque es pedir y recibir la unción del Espíritu Santo. Psicológica y espiritualmente, es el momento de la afirmación: los jóvenes son llamados a abrazar su adopción divina y su identidad en Cristo, llenando el espacio dejado la noche anterior con una profunda certidumbre espiritual.</p>
+            </div>
+            <div id="item-3">
+              <h4>Nutre (Sábado después del lunch) | El Propósito en Acción</h4>
+              <p>La identidad cristiana se estanca si no tiene un propósito. Una vez llenos del Espíritu, el paso lógico en su sanidad es volcarse hacia los demás. En este bloque, realizaremos un impacto misionero masivo. Al salir a compartir el mensaje de Dios y nutrir a la comunidad, los jóvenes viven su propósito de primera mano, pasando de la introspección a la acción.</p>
+            </div>
+            <div id="item-4">
+              <h5>Adora (Sábado por la tarde) | La Celebración Práctica de la Fe</h5>
+              <p>Después de servir, la respuesta natural es la gratitud, pero entenderemos la adoración más allá del canto: como una actitud integral y de comunidad. Este bloque será altamente interactivo; aunque contaremos con participaciones musicales inspiradoras de distintos grupos de la Unión, el espacio integrará dinámicas grupales y juegos bíblicos. El orador conectará estas actividades bajo la premisa de que adorar es también celebrar nuestra fe juntos, reforzando el sentido de pertenencia y manteniendo la continuidad lógica del programa.</p>
+            </div>
+            <div id="item-5">
+              <h5>Recrea (Sábado por la noche y Domingo por la mañana) | El Bienestar Integral</h5>
+              <p>La sanidad mental y espiritual incluye el esparcimiento sano. Para concluir la experiencia, demostraremos que la fe es práctica, alegre y relacional. A través de una gran kermés, torneos deportivos y dinámicas sociales, los jóvenes recrearán su mente y su cuerpo. Esto cierra el congreso fortaleciendo lazos de amistad, generando altos niveles de bienestar y dejando el deseo de regresar en el futuro.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="mt-content col-9">
       <div class="carousel-section container" id="hospedaje">
         <div class="carousel-header" data-aos="fade-down">
           <div class="header-text">
-            <h2>Alojamientos populares en Phoenix</h2>
-            <p>Ofrecemos una lista de los Airbnb más cercanos para disfrutar de este increíble evento.</p>
+            <h2>Opciones de hospedaje cercanas</h2>
+            <p class="col-lg-10">Te compartimos algunas sugerencias de Airbnb independientes al evento.</p>
+            <p class="col-lg-10">Recomendamos verificar su disponibilidad y reservar con tiempo, ya que los espacios suelen agotarse rápido.</p>
           </div>
 
           <div class="carousel-controls" *ngIf="listings.length > 0">
@@ -100,7 +146,10 @@
                     <img src="assets/images/airbnb/svg_3.svg" alt="Icon 3">
                     <div class="amenity-info">
                       <span class="label">Ubicación</span>
-                      <span class="value">{{ ($any(item)).preciseLocation || 'Cargando...' }}</span>
+                      <span class="value">
+                        {{ ($any(item)).preciseLocation || 'Cargando...' }}
+                        <small *ngIf="($any(item)).distance">({{ ($any(item)).distance | number:'1.1-1' }} mi)</small>
+                      </span>
                     </div>
                   </div>
                 </div>
