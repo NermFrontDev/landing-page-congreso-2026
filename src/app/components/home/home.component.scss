@@ -412,8 +412,19 @@ h6{
       width: 320px;
     }
   }
+
   /* ------------------ PRAYER SECTION ------------------ */
   .prayer{
     height: 420px;
   }
+}
+
+/* ------------------ DOUBTS SECTION ------------------ */
+
+.bg-dudas{
+  background-image: url("../../../assets/images/questions-bg.webp");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:2000px;
+  width: 100%;
 }
