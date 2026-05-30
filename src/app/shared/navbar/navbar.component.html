@@ -13,13 +13,13 @@
         <a class="nav-link font-space fw-normal text-dark fs-6" href="#testimonios">Testimonios</a>
         <a class="nav-link font-space fw-normal text-dark fs-6" href="#preguntas">Preguntas</a>
       </div>
-      <div class="cta-nav">
+      <div class="cta-nav d-none d-lg-block">
         <button class="btn-nav" disabled>
-          <a class="txt-btn fs-6" href="#">Muy pronto</a>
+          <a class="txt-btn fs-6">Muy pronto</a>
         </button>
       </div>
       <div class="d-md-block d-lg-none">
-        <a class="btn btn-primary btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+        <a class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
           <img src="../../../assets/images/icons/menu-burguer.svg" alt="Menu Icon" loading="lazy">
         </a>
       </div>
@@ -27,18 +27,27 @@
   </div>
 </nav>
 
-<!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-  Toggle static offcanvas
-</button> -->
-
 <div class="offcanvas offcanvas-end p-5" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
+    <button type="button" class="btn-close fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
+  <div class="offcanvas-body p-4 d-flex flex-column justify-content-start gap-5">
     <div>
-      I will not close if you click outside of me.
+      <div class="navbar-nav gap-4 d-flex flex-column">
+        <a class="nav-link font-space fw-normal text-dark fs-5" href="#inicio">Inicio</a>
+        <a class="nav-link font-space fw-normal text-dark fs-5" href="#evento">Evento</a>
+        <a class="nav-link font-space fw-normal text-dark fs-5" href="#hospedaje">Hospedaje</a>
+        <a class="nav-link font-space fw-normal text-dark fs-5" href="#orador">Orador</a>
+        <a class="nav-link font-space fw-normal text-dark fs-5" href="#agenda">Agenda</a>
+        <a class="nav-link font-space fw-normal text-dark fs-5" href="#testimonios">Testimonios</a>
+        <a class="nav-link font-space fw-normal text-dark fs-5" href="#preguntas">Preguntas</a>
+      </div>
+    </div>
+    <div class="cta-nav row">
+      <button class="btn-nav py-2" disabled>
+        <a class="txt-btn fs-6">Muy pronto</a>
+      </button>
     </div>
   </div>
 </div>
