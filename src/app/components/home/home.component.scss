@@ -474,8 +474,25 @@ $border-radius-tab: 20px;     // Curvatura superior de la pestaña
   background-image: url("../../../assets/images/agenda-bg.webp");
   background-size:cover;
   background-repeat: no-repeat;
-  height:1700px;
+  height:2500px;
   width: 100%;
+}
+
+.tag-testimonials {
+  background-color: #F8F9FD;
+  border: 2px solid #A9A9A9;
+  width: 40%;
+  border-radius: 100px;
+  padding: 4px 8px;
+  font-size: 1.3rem;
+}
+.color-gray {
+  color: #9DA2A8;
+}
+
+.title-content {
+  position: absolute;
+  margin-bottom: -350px;
 }
 
 h6{
@@ -565,6 +582,16 @@ table {
   margin-top: 15rem;
 }
 
+/* TESTIMONIALS SECTION */
+img.testimonials-header-image {
+  max-width: 100%;
+  width: 80%;
+}
+
+span.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
 /* ======================= DESKTOP STYLES END HERE ======================= */
 
 /* ======================= iPAD STYLES STARTS HERE ======================= */
@@ -631,6 +658,9 @@ table {
     margin-bottom: 50px !important;
     flex-direction: column !important;
   }
+  .title-content {
+    margin-bottom: -980px !important;
+  }
 }
 
 /* ======================= MOBILE STYLES STARTS HERE ======================= */
@@ -690,5 +720,9 @@ table {
   /* ------------------ PRAYER SECTION ------------------ */
   .prayer{
     height: 420px;
+  }
+  /* ------------------ AGENDA SECTION ------------------ */
+  .title-content {
+    margin-bottom: -620px !important;
   }
 }

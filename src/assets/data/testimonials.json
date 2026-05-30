@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "stars": 5,
+    "text": "“WordNook makes finding a coworking space so easy!! can book a desk in minutes and get straight to work. Highly recommend!”",
+    "author": {
+      "name": "Joao M.",
+      "conference": "Conferencia de Az",
+      "profileImage": "assets/images/testimonials/profiles/profile_1.png"
+    }
+  },
+  {
+    "id": 2,
+    "stars": 5,
+    "text": "“WordNook makes finding a coworking space so easy!! can book a desk in minutes and get straight to work. Highly recommend!”",
+    "author": {
+      "name": "Joao M.",
+      "conference": "Conferencia de Az",
+      "profileImage": "assets/images/testimonials/profiles/profile_1.png"
+    }
+  }
+]

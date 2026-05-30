@@ -7,6 +7,8 @@ import { AirbnbService } from '../../services/airbnb.service';
 import * as Aos from 'aos';
 import { Agenda } from '../../models/agenda.model';
 import { get } from 'https';
+import { Testimonial } from '../../models/testimonials.model';
+import { TestimonialService } from '../../services/testimonials.service';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +18,7 @@ import { get } from 'https';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  testimonials: Testimonial[] = [];
   listings: AirbnbListing[] = [];
 
   // Coordenadas de referencia del evento (Phoenix, AZ)
@@ -34,6 +37,7 @@ export class HomeComponent implements OnInit {
   eventos: Agenda[] = [];
 
   constructor(
+    private testimonialService: TestimonialService,
     private http: HttpClient,
     private airbnbService: AirbnbService,
     @Inject(PLATFORM_ID) private platformId: Object,
@@ -46,6 +50,11 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.testimonialService.getTestimonials().subscribe({
+      next: (data) => this.testimonials = data,
+      error: (err) => console.error(err)
+    });
 
     this.airbnbService.getListings().subscribe({
       next: (data) => {
@@ -79,6 +88,10 @@ export class HomeComponent implements OnInit {
         once: true,
       });
     }
+  }
+
+  getStarsArray(stars: number): number[] {
+    return Array(stars).fill(0);
   }
 
   get eventosFiltrados(): Agenda[] {
