@@ -428,3 +428,14 @@ h6{
   height:2000px;
   width: 100%;
 }
+
+.accordion-button{
+  background: none;
+  color: black;
+  box-shadow: none;
+}
+
+.accordion{
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color: none;
+}

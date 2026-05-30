@@ -1,54 +1,20 @@
-
-footer{
-    width: 100%;
-    position: absolute;
-    background: none;
+.footer-position{
     margin-top: -200px;
-    color: white;
 }
 
-.cont-footer{
-    width: 90%;
-    margin: auto;
-}
-
-/* ------------------ FIRST COLUMN FOOTER ------------------ */
-
-.column-1{
-    flex-basis: 30%;
-    padding: 10px;
-    margin-bottom: 20px;
+@media (max-width: 576px) {
+    .footer-position{
+        margin-top: -250px;
+    }
 }
 
 .logo-footer{
-    width: 80px;
+    width: 90px;
     height: auto;
     max-width: 100%;
 }
 
-/* ------------------ SECOND COLUMN FOOTER ------------------ */
-
-.column-2{
-    flex-basis: 30%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.menu-footer{
-    margin-top: 20px;
-}
-
-/* ------------------ THIRD COLUMN FOOTER ------------------ */
-.column-3{
-    flex-basis: 30%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.social-icons{
-    margin-top: 20px;
-}
-
+/* ------------------ SOCIAL ICONS ------------------ */
 .img-space{
     margin-right: 12px;
 }
@@ -58,8 +24,4 @@ hr{
     height: 2px;
     background-color: white;
     opacity: 100%;
-}
-
-.ft-space{
-    margin-right: 12px;
 }
