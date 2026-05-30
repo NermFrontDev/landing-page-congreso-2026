@@ -1,10 +1,12 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from '../../shared/footer/footer.component';
 import { AirbnbListing } from '../../models/airbnb.model';
 import { AirbnbService } from '../../services/airbnb.service';
 import * as Aos from 'aos';
+import { Agenda } from '../../models/agenda.model';
+import { get } from 'https';
 
 @Component({
   selector: 'app-home',
@@ -27,12 +29,24 @@ export class HomeComponent implements OnInit {
   itemsPerView = 3;
   maxIndex = 0;
 
+  categorias: string[] = ['Vie 16 Oct', 'Sáb 17 Oct', 'Dom 18 Oct'];
+  filtroActual: string = 'Vie 16 Oct';
+  eventos: Agenda[] = [];
+
   constructor(
+    private http: HttpClient,
     private airbnbService: AirbnbService,
     @Inject(PLATFORM_ID) private platformId: Object,
   ) {}
 
+  currentTab: string = 'S';
+
+  changeTab(tab: string): void {
+    this.currentTab = tab;
+  }
+
   ngOnInit(): void {
+
     this.airbnbService.getListings().subscribe({
       next: (data) => {
         // 1. Calcular distancia en millas y filtrar/ordenar
@@ -55,12 +69,24 @@ export class HomeComponent implements OnInit {
       error: (err) => console.error(err)
     });
 
+    this.http.get<Agenda[]>('assets/data/agenda.json').subscribe(schedule => {
+      this.eventos = schedule;
+    });
+
     if (isPlatformBrowser(this.platformId)) {
       Aos.init({
         duration: 800,
         once: true,
       });
     }
+  }
+
+  get eventosFiltrados(): Agenda[] {
+    return this.eventos.filter(e => e.categoria === this.filtroActual);
+  }
+
+  cambiarFiltro(categoria: string) {
+    this.filtroActual = categoria;
   }
 
   /**
