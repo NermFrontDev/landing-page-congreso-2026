@@ -836,3 +836,39 @@ img.testimonials-header-image {
     margin-top: 0;
   }
 }
+
+/* ------------------ DOUBTS SECTION ------------------ */
+
+.bg-dudas{
+  background-image: url("../../../assets/images/questions-bg.webp");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:2000px;
+  width: 100%;
+}
+
+.accordion-button{
+  background: none;
+  color: black;
+  box-shadow: none;
+}
+
+.accordion{
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color: none;
+}
+
+.btn-contact{
+  margin: 1em;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #ffffffb8;
+  border: solid#ffffff;
+}
+
+.txt-btn-contact{
+  text-decoration: none;
+  color: #5B4337;
+}
