@@ -1,5 +1,10 @@
 @import '../../../styles.scss';
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
 div#staticBackdrop {
   width: 50%;
   background-color: #F9F5EC;
