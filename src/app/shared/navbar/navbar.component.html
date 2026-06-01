@@ -1,0 +1,53 @@
+<nav class="navbar bg-nav navbar-expand-lg">
+  <div class="container-fluid justify-content-center">
+    <div class="navbar d-flex flex-md-row justify-content-between container col-10">
+      <a class="navbar-brand m-0" href="#inicio">
+        <img src="../../../assets/images/logo-fesja.webp" alt="Logo Fesja Az" loading="lazy" class="logo" />
+      </a>
+      <div class="navbar-nav gap-3 d-none d-lg-flex">
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#inicio">Inicio</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#evento">Evento</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#hospedaje">Hospedaje</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#orador">Orador</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#agenda">Agenda</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#testimonios">Testimonios</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="#preguntas">Preguntas</a>
+      </div>
+      <div class="cta-nav d-none d-lg-block">
+        <button class="btn-nav" disabled>
+          <a class="txt-btn fs-6">Muy pronto</a>
+        </button>
+      </div>
+      <div class="d-md-block d-lg-none">
+        <a class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          <img src="../../../assets/images/icons/menu-burguer.svg" alt="Menu Icon" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-end p-5" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" #offcanvasMenu aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel">Menú</h5>
+    <button type="button" class="btn-close fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-4 d-flex flex-column justify-content-start gap-5">
+
+    <div class="navbar-nav gap-4 d-flex flex-column">
+      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('inicio')">Inicio</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('evento')">Evento</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('hospedaje')">Hospedaje</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('orador')">Orador</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('agenda')">Agenda</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('testimonios')">Testimonios</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('preguntas')">Preguntas</a>
+    </div>
+
+    <div class="cta-nav row">
+      <button class="btn-nav py-2" disabled>
+        <a class="txt-btn fs-6">Muy pronto</a>
+      </button>
+    </div>
+  </div>
+</div>

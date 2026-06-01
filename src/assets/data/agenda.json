@@ -1,0 +1,481 @@
+[
+  {
+    "titulo": "Drama",
+    "horario": [
+      "7:00", "pm"
+    ],
+    "tag": [
+      "Suelta",
+      "Bienvenida"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Bienvenida y rompehielos",
+    "horario": [
+      "7:10", "pm"
+    ],
+    "tag": [
+      "Suelta"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Worship",
+    "horario": [
+      "7:20", "pm"
+    ],
+    "tag": [
+      "Suelta"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Nova 7",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Inauguración oficial",
+    "horario": [
+      "7:35", "pm"
+    ],
+    "tag": [
+      "Suelta"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Presidente Fesja Az",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Entrevista al Pastor Josias",
+    "horario": [
+      "7:40", "pm"
+    ],
+    "tag": [
+      "Suelta",
+      "Entrevista"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Tema #1",
+    "horario": [
+      "7:45", "pm"
+    ],
+    "tag": [
+      "Suelta",
+      "Tema#1"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Pr. Josías F.",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Dinámica",
+    "horario": [
+      "8:25", "pm"
+    ],
+    "tag": [
+      "Suelta",
+      "Devocional"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Marlon Fesja Az",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Canto Final",
+    "horario": [
+      "8:40", "pm"
+    ],
+    "tag": [
+      "Suelta",
+      "Nova7"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Nova 7",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Oración Final",
+    "horario": [
+      "8:45", "pm"
+    ],
+    "tag": [
+      "Suelta"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Pr. Josías F.",
+    "locacion": "Auditorio"
+  },
+
+
+
+
+  {
+    "titulo": "Worship",
+    "horario": [
+      "9:15", "am"
+    ],
+    "tag": [
+      "Abraza",
+      "Worship"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Nova 7",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Bienvenida y Acción",
+    "horario": [
+      "9:30", "am"
+    ],
+    "tag": [
+      "Abraza",
+      "Bienvenida"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Oración",
+    "horario": [
+      "9:35", "am"
+    ],
+    "tag": [
+      "Abraza"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Dinámica Abraza",
+    "horario": [
+      "9:37", "am"
+    ],
+    "tag": [
+      "Abraza",
+      "Dinámica"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Elizabeth Fesja Az",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Participación FESJAS",
+    "horario": [
+      "9:52", "am"
+    ],
+    "tag": [
+      "Abraza"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Pendiente",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Foro",
+    "horario": [
+      "9:57", "am"
+    ],
+    "tag": [
+      "Foro",
+      "Abraza"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Panelistas",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Camino a Cristo(Kahoot)",
+    "horario": [
+      "10:43", "am"
+    ],
+    "tag": [
+      "Kahoot",
+      "Abraza"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Anuncios y ofrendas",
+    "horario": [
+      "10:50", "am"
+    ],
+    "tag": [
+      "Abraza",
+      "Anuncios",
+      "Ofrendas"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Worship",
+    "horario": [
+      "11:00", "am"
+    ],
+    "tag": [
+      "Abraza"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Tema #2",
+    "horario": [
+      "11:05", "am"
+    ],
+    "tag": [
+      "Abraza",
+      "Tema#2"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Pr. Josías F.",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Participación FESJAS",
+    "horario": [
+      "11:50", "am"
+    ],
+    "tag": [
+      "Canto Especial",
+      "Abraza"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Pendiente",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Oración Final",
+    "horario": [
+      "11:55", "am"
+    ],
+    "tag": [
+      "Abraza",
+      "Oración"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Pr. Josías F.",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Comida",
+    "horario": [
+      "12:15", "pm"
+    ],
+    "tag": [
+      "Lunch"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Comedor"
+  },
+  {
+    "titulo": "Impacto Misionero",
+    "horario": [
+      "2:30", "pm"
+    ],
+    "tag": [
+      "Nutre",
+      "Impacto"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Phoenix, Az"
+  },
+  {
+    "titulo": "Worship",
+    "horario": [
+      "4:30", "pm"
+    ],
+    "tag": [
+      "Worship",
+      "Adora"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Nova 7",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Bienvenida con rompehielo",
+    "horario": [
+      "4:40", "pm"
+    ],
+    "tag": [
+      "Adora",
+      "Bienvenida"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Oración",
+    "horario": [
+      "4:45", "pm"
+    ],
+    "tag": [
+      "Adora",
+      "Oración"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Film Fest",
+    "horario": [
+      "4:47", "pm"
+    ],
+    "tag": [
+      "Adora",
+      "Film Fest"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Pr. Cesar S.",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Boom Bíblico",
+    "horario": [
+      "4:52", "pm"
+    ],
+    "tag": [
+      "Adora",
+      "BoomBiblico"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Participación FESJAS",
+    "horario": [
+      "5:32", "pm"
+    ],
+    "tag": [
+      "Adora",
+      "Drama"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Pendiente",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Tema #3",
+    "horario": [
+      "5:42", "pm"
+    ],
+    "tag": [
+      "Adora",
+      "Tema#3"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Pr. Josías F.",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Participación FESJAS",
+    "horario": [
+      "6:30", "pm"
+    ],
+    "tag": [
+      "Adora",
+      "Canto Especial"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Pendiente",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Despedida del sábado",
+    "horario": [
+      "6:35", "pm"
+    ],
+    "tag": [
+      "Adora"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Kermés y torneo deportivo",
+    "horario": [
+      "7:00", "pm"
+    ],
+    "tag": [
+      "Recrea",
+      "Torneo"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Canchas"
+  },
+
+
+  {
+    "titulo": "Worship",
+    "horario": [
+      "9:00", "am"
+    ],
+    "tag": [
+      "Recrea",
+      "Worship"
+    ],
+    "categoria": "Dom 18 Oct",
+    "speaker": "Nova 7",
+    "locacion": "Gimnasio"
+  },
+  {
+    "titulo": "Tema #4",
+    "horario": [
+      "9:15", "am"
+    ],
+    "tag": [
+      "Recrea",
+      "Tema#4"
+    ],
+    "categoria": "Dom 18 Oct",
+    "speaker": "Pr. Josías F.",
+    "locacion": "Gimnasio"
+  },
+  {
+    "titulo": "Torneo deportivo",
+    "horario": [
+      "9:35", "am"
+    ],
+    "tag": [
+      "Recrea",
+      "Torneo"
+    ],
+    "categoria": "Dom 18 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Canchas"
+  },
+  {
+    "titulo": "Clausura y Premiación",
+    "horario": [
+      "Pendiente", "am"
+    ],
+    "tag": [
+      "Recrea",
+      "Clausura"
+    ],
+    "categoria": "Dom 18 Oct",
+    "speaker": "Fesja Az Staff",
+    "locacion": "Gimnasio"
+  }
+]

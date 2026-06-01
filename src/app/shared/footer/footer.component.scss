@@ -1,0 +1,27 @@
+.footer-position{
+    margin-top: -200px;
+}
+
+@media (max-width: 576px) {
+    .footer-position{
+        margin-top: -250px;
+    }
+}
+
+.logo-footer{
+    width: 90px;
+    height: auto;
+    max-width: 100%;
+}
+
+/* ------------------ SOCIAL ICONS ------------------ */
+.img-space{
+    margin-right: 12px;
+}
+
+/* ------------------ LAST PART FOOTER ------------------ */
+hr{
+    height: 2px;
+    background-color: white;
+    opacity: 100%;
+}
