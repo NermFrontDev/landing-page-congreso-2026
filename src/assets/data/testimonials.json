@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "stars": 5,
+    "text": "“WordNook makes finding a coworking space so easy!! can book a desk in minutes and get straight to work. Highly recommend!”",
+    "author": {
+      "name": "Joao M.",
+      "conference": "Conferencia de Az",
+      "profileImage": "assets/images/testimonials/profiles/profile_1.png"
+    }
+  },
+  {
+    "id": 2,
+    "stars": 5,
+    "text": "“Our team needed a flexible meeting space, and WorkNook delivered. The process was smooth, and the space was exactly what we needed!”",
+    "author": {
+      "name": "Bruno K.",
+      "conference": "Conferencia de Hawaii",
+      "profileImage": "assets/images/testimonials/profiles/profile_2.png"
+    }
+  },
+  {
+    "id": 3,
+    "stars": 5,
+    "text": "“I love the variety of spaces available! Whether I need a quiet sport or collaborative space, WorkNook always has the perfect option.”",
+    "author": {
+      "name": "Lais A.",
+      "conference": "Conferencia de Nevada",
+      "profileImage": "assets/images/testimonials/profiles/profile_3.png"
+    }
+  },
+  {
+    "id": 4,
+    "stars": 5,
+    "text": "“WordNook makes finding a coworking space so easy!! can book a desk in minutes and get straight to work. Highly recommend!”",
+    "author": {
+      "name": "Joao M.",
+      "conference": "Conferencia de Az",
+      "profileImage": "assets/images/testimonials/profiles/profile_1.png"
+    }
+  },
+  {
+    "id": 5,
+    "stars": 5,
+    "text": "“Our team needed a flexible meeting space, and WorkNook delivered. The process was smooth, and the space was exactly what we needed!”",
+    "author": {
+      "name": "Bruno K.",
+      "conference": "Conferencia de Hawaii",
+      "profileImage": "assets/images/testimonials/profiles/profile_2.png"
+    }
+  },
+  {
+    "id": 6,
+    "stars": 5,
+    "text": "“I love the variety of spaces available! Whether I need a quiet sport or collaborative space, WorkNook always has the perfect option.”",
+    "author": {
+      "name": "Lais A.",
+      "conference": "Conferencia de Nevada",
+      "profileImage": "assets/images/testimonials/profiles/profile_3.png"
+    }
+  }
+]

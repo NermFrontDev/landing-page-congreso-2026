@@ -43,16 +43,28 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   overscroll-behavior: none;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
+:host ::ng-deep {
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: block !important;
+  }
+}
+
 body {
   font-family: var(--font-fejaUnion-secondary);
-  /* overflow-x: hidden; */
+  overflow-x: clip;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 p, span, a, li {
