@@ -2,9 +2,9 @@
   {
     "id": 1,
     "stars": 5,
-    "text": "“WordNook makes finding a coworking space so easy!! can book a desk in minutes and get straight to work. Highly recommend!”",
+    "text": "“El congreso de jóvenes me ha dado claridad espiritual. Ha sido una experiencia bonita el estar alrededor de tantos jóvenes de mi edad.”",
     "author": {
-      "name": "Joao M.",
+      "name": "Karla G.",
       "conference": "Conferencia de Az",
       "profileImage": "assets/images/testimonials/profiles/profile_1.png"
     }
@@ -12,19 +12,19 @@
   {
     "id": 2,
     "stars": 5,
-    "text": "“Our team needed a flexible meeting space, and WorkNook delivered. The process was smooth, and the space was exactly what we needed!”",
+    "text": "“A mí me gusta la comunidad que se crea a través de los programas. Da espacio para conocer a otras personas y también convivir.”",
     "author": {
-      "name": "Bruno K.",
-      "conference": "Conferencia de Hawaii",
+      "name": "Damaris C.",
+      "conference": "Conferencia de Arizona",
       "profileImage": "assets/images/testimonials/profiles/profile_2.png"
     }
   },
   {
     "id": 3,
     "stars": 5,
-    "text": "“I love the variety of spaces available! Whether I need a quiet sport or collaborative space, WorkNook always has the perfect option.”",
+    "text": "“Esta experiencia me ha ayudado a acercarme más a Dios, conocer jóvenes que comparten mi fe y disfrutar de una diversión sana y enriquecedora.”",
     "author": {
-      "name": "Lais A.",
+      "name": "Ana Karina T.",
       "conference": "Conferencia de Nevada",
       "profileImage": "assets/images/testimonials/profiles/profile_3.png"
     }
