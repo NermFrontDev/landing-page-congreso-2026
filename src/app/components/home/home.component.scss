@@ -9,13 +9,8 @@
   -webkit-overflow-scrolling: touch;
 }
 
-@font-face{
-    font-family: 'principal-title';
-    src: url("../../../assets/fonts/magdes/magdes-regular.woff2") format('truetype');
-}
-
 .font-space{
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-fejaUnion), sans-serif;
 }
 
 .font-60{
@@ -30,7 +25,7 @@
 /* ======================= DESKTOP STYLES STARTS HERE ======================= */
 /* ------------------ HERO-BANNER ------------------  */
 .text-title{
-  font-family: 'principal-title';
+  font-family: var(--font-fejaUnion-title), serif;
   font-size:90px;
   font-style:bold;
 }
