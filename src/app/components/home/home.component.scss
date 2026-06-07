@@ -502,7 +502,10 @@ $border-radius-tab: 20px;
 }
 
 .prayer{
-    height: 550px;
+  max-width: 100%;
+  width: 580px;
+  height: 100%;
+    /* height: 550px; */
 }
 
 /* ------------------ AGENDA SECTION ------------------ */
@@ -824,7 +827,9 @@ img.testimonials-header-image {
 
   /* ------------------ PRAYER SECTION ------------------ */
   .prayer{
-    height: 420px;
+    max-width: 100%;
+    width: 330px;
+    height: 100%;
   }
   /* ------------------ AGENDA SECTION ------------------ */
   .title-content {
