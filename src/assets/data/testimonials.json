@@ -5,7 +5,7 @@
     "text": "“El congreso de jóvenes me ha dado claridad espiritual. Ha sido una experiencia bonita el estar alrededor de tantos jóvenes de mi edad.”",
     "author": {
       "name": "Karla G.",
-      "conference": "Conferencia de Az",
+      "conference": "Conferencia de Arizona",
       "profileImage": "assets/images/testimonials/profiles/profile_1.png"
     }
   },
@@ -25,14 +25,14 @@
     "text": "“Esta experiencia me ha ayudado a acercarme más a Dios, conocer jóvenes que comparten mi fe y disfrutar de una diversión sana y enriquecedora.”",
     "author": {
       "name": "Ana Karina T.",
-      "conference": "Conferencia de Nevada",
+      "conference": "Conferencia de Arizona",
       "profileImage": "assets/images/testimonials/profiles/profile_3.png"
     }
   },
   {
     "id": 4,
     "stars": 5,
-    "text": "“WordNook makes finding a coworking space so easy!! can book a desk in minutes and get straight to work. Highly recommend!”",
+    "text": "“Salir a la comunidad y poner nuestra fe en acción con tantos jóvenes de la Unión fue una experiencia inolvidable.”",
     "author": {
       "name": "Joao M.",
       "conference": "Conferencia de Az",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "stars": 5,
-    "text": "“Our team needed a flexible meeting space, and WorkNook delivered. The process was smooth, and the space was exactly what we needed!”",
+    "text": "“Los temas y el proceso de la fase 'Suelta' me ayudaron muchísimo a liberarme de cargas y ansiedades. Regresé a casa con una identidad clara y renovada en Cristo.”",
     "author": {
       "name": "Bruno K.",
       "conference": "Conferencia de Hawaii",
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "stars": 5,
-    "text": "“I love the variety of spaces available! Whether I need a quiet sport or collaborative space, WorkNook always has the perfect option.”",
+    "text": "“La adoración y los temas son profundos, pero los torneos deportivos hicieron que fuera superdivertido conocer a hermanos de otras conferencias.”",
     "author": {
       "name": "Lais A.",
       "conference": "Conferencia de Nevada",
