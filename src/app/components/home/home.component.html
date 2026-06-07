@@ -235,31 +235,35 @@
               <span class="card-price">{{ item.price.breakDown.basePrice.description }}</span>
               <h3 class="card-title my-3" [title]="item.title">{{ item.title }}</h3>
 
-              <div class="card-amenities">
-                <div class="amenity">
-                  <img src="assets/images/airbnb/svg_1.svg" alt="Icon 1">
-                  <div class="amenity-info">
-                    <span class="label">Rating</span>
-                    <span class="value">{{ item.rating.guestSatisfaction }}%</span>
+              <div class="card-amenities gap-4 px-2 px-md-3 px-xl-0">
+                <div class="amenity d-flex flex-column align-items-start gap-2">
+                  <span class="label-card">Rating</span>
+                  <div class="amenity-info d-flex flex-row align-items-start justify-content-start gap-2">
+                    <img src="assets/images/airbnb/svg_1.svg" alt="Icon 1">
+                    <span class="value">{{ item.rating.guestSatisfaction }}</span>
                   </div>
                 </div>
 
-                <div class="amenity">
-                  <img src="assets/images/airbnb/svg_2.svg" alt="Icon 2">
-                  <div class="amenity-info">
-                    <span class="label">Reviews</span>
+                <div class="amenity d-flex flex-column align-items-start gap-2">
+                  <span class="label-card">Reviews</span>
+                  <div class="amenity-info d-flex flex-row align-items-start justify-content-start gap-2">
+                    <img src="assets/images/airbnb/svg_2.svg" alt="Icon 2">
                     <span class="value">{{ item.rating.reviewsCount }}</span>
                   </div>
                 </div>
 
-                <div class="amenity">
-                  <img src="assets/images/airbnb/svg_3.svg" alt="Icon 3">
-                  <div class="amenity-info">
-                    <span class="label">Ubicación</span>
-                    <span class="value">
-                      {{ ($any(item)).preciseLocation || 'Cargando...' }}
-                      <small *ngIf="($any(item)).distance">({{ ($any(item)).distance | number:'1.1-1' }} mi)</small>
-                    </span>
+                <div class="amenity d-flex flex-column align-items-start gap-2">
+                  <span class="label-card">Ubicación</span>
+                  <div class="amenity-info d-flex flex-row align-items-start justify-content-start gap-2">
+                    <img src="assets/images/airbnb/svg_3.svg" alt="Icon 3">
+                    <div class="d-flex flex-column align-items-start gap-1">
+                      <span class="value">
+                        {{ ($any(item)).preciseLocation || 'Cargando...' }}
+                      </span>
+                      <span class="value">
+                        <small *ngIf="($any(item)).distance">({{ ($any(item)).distance | number:'1.1-1' }} mi)</small>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>

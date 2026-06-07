@@ -186,7 +186,7 @@ $items-per-view: 3;
 
   .card-alojamiento {
     flex: 0 0 calc((100% - (#{$items-per-view} - 1) * #{$gap}) / #{$items-per-view});
-    background: #ffffff96;
+    background: #ffffffdd;
     border: 2px solid #ced6fe87;
     border-radius: 24px;
     /* overflow: clip; */
@@ -248,12 +248,11 @@ $items-per-view: 3;
         justify-content: space-between;
         border-top: 1px solid #edf2f7;
         padding-top: 16px;
-        margin-top: auto; // Empuja las amenities siempre al fondo de la tarjeta
+        margin-top: 20px; // Empuja las amenities siempre al fondo de la tarjeta
 
         .amenity {
           display: flex;
           align-items: center;
-          gap: 8px;
 
           .icon {
             width: 18px;
@@ -261,14 +260,14 @@ $items-per-view: 3;
             color: #5a4af4;
           }
 
+          span.label-card {
+            font-size: 15px;
+            color: lightslategrey;
+          }
           .amenity-info {
             display: flex;
             flex-direction: column;
 
-            .label {
-              font-size: 0.75rem;
-              color: #a0aec0;
-            }
 
             .value {
               font-size: 0.85rem;
