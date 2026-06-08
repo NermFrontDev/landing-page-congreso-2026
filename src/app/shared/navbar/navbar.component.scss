@@ -75,3 +75,9 @@ div#staticBackdrop {
     height: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar{
+    margin-top: -20px;
+  }
+}
