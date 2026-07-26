@@ -57,13 +57,13 @@ section#inicio {
     position: absolute;
     bottom: -10px;
     width: 470px;
-    left: 170px;
+    left: 230px;
   }
   .cloud2 {
     position: absolute;
     width: 260px;
     bottom: 80px;
-    left: 60px;
+    left: 160px;
   }
   .cloud3 {
     position: absolute;
@@ -78,7 +78,7 @@ section#inicio {
   top: 0;
   left: 0;
   z-index: 0;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .about-section{
@@ -92,6 +92,20 @@ section#inicio {
     /* height:2350px; */
     height: 3000px;
     width: 100%;
+}
+
+.cta-register {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none !important;
+  cursor: pointer;
+  padding: 10px 75px;
+}
+.btn-cta {
+  position: absolute;
+  z-index: 990;
+  top: 600px;
+  width: 100%;
 }
 
 .space-section{
@@ -445,6 +459,14 @@ $border-radius-tab: 20px;
 
 // --- BREAKPOINT: MOBILE (Max-width: 768px) ---
 @media (max-width: 768px) {
+  .cta-register {
+    padding: 15px 45px;
+  }
+  .btn-cta {
+    top: 510px;
+    width: 100%;
+  }
+
   .sanar-tabs-section {
     padding: 20px 10px;
 
@@ -802,13 +824,13 @@ img.testimonials-header-image {
     .cloud1 {
       bottom: 200px;
       width: 470px;
-      left: 70px;
+      left: 30px;
     }
 
     .cloud2 {
       width: 260px;
       bottom: 10px;
-      left: 30px;
+      left: -60px;
     }
 
     .cloud3 {
