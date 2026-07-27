@@ -1,0 +1,63 @@
+<section class="resources mt-3 mt-lg-5">
+  <div class="resources__hero mt-5" [style.background-image]="'url(' + heroImageUrl + ')'"></div>
+
+  <div class="resources__body container">
+    <h2 class="resources__title">{{ title }}</h2>
+
+    <p class="resources__status" *ngIf="loadingResources()">Cargando recursos…</p>
+    <p class="resources__status resources__status--error" *ngIf="loadError()">
+      No se pudieron cargar los recursos. Intenta recargar la página.
+    </p>
+
+    <div class="resources__grid" *ngIf="!loadingResources()">
+      <article class="card d-flex flex-column align-items-start gap-3" *ngFor="let resource of resourcesList(); let i = index">
+        <div class="card__text">
+          <h3 class="card__heading">{{ resource.heading }}</h3>
+          <p class="card__description">{{ resource.description }}</p>
+        </div>
+
+        <div class="card__thumb">
+          <img [src]="resource.thumbnailUrl" [alt]="resource.heading" loading="lazy" />
+        </div>
+
+        <div class="card__specs d-flex flex-column align-items-start justify-content-center gap-2 ms-2">
+          <div class="d-flex align-items-center gap-2">
+            <i class="card__icon bi" [ngClass]="resource.iconSize"></i>
+            <span class="card__spec">Tamaño: {{ resource.fileSize }}</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="card__icon bi" [ngClass]="resource.iconCompatible"></i>
+            <span class="card__spec">Compatible: {{ resource.compatible }}</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="card__icon bi" [ngClass]="resource.iconPixelDimension"></i>
+            <span class="card__spec">Resolución: {{ resource.pixelDimension }}</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <i class="card__icon bi" [ngClass]="resource.iconFileType"></i>
+            <span class="card__spec">Archivo: {{ resource.fileType }}</span>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          class="card__button col-12"
+          [disabled]="downloadingIndex() === i"
+          (click)="onDownload(resource, i)"
+        >
+          <ng-container *ngIf="downloadingIndex() !== i; else loading">
+            Descargar
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3v12m0 0 5-5m-5 5-5-5M4 21h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </ng-container>
+          <ng-template #loading>Descargando…</ng-template>
+        </button>
+
+        <p class="card__error" *ngIf="errorIndex() === i">
+          No se pudo descargar. Intenta de nuevo.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>

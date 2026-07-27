@@ -12,6 +12,7 @@
         <a class="nav-link font-space fw-normal text-dark fs-6" href="#agenda">Agenda</a>
         <a class="nav-link font-space fw-normal text-dark fs-6" href="#testimonios">Testimonios</a>
         <a class="nav-link font-space fw-normal text-dark fs-6" href="#preguntas">Preguntas</a>
+        <a class="nav-link font-space fw-normal text-dark fs-6" href="/resources">Recursos</a>
       </div>
       <div class="cta-nav d-none d-lg-block">
         <button class="btn-nav w-100">
@@ -33,17 +34,16 @@
     <button type="button" class="btn-close fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body p-4 d-flex flex-column justify-content-start gap-5">
-
     <div class="navbar-nav gap-3 d-flex flex-column">
-      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('inicio')">Inicio</a>
-      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('evento')">Evento</a>
-      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('hospedaje')">Hospedaje</a>
-      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('orador')">Orador</a>
-      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('agenda')">Agenda</a>
-      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('testimonios')">Testimonios</a>
-      <a class="nav-link font-space fw-normal text-dark fs-5" style="cursor: pointer;" (click)="navigateToSection('preguntas')">Preguntas</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" data-bs-dismiss="offcanvas" [routerLink]="['/']" fragment="inicio">Inicio</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" data-bs-dismiss="offcanvas" [routerLink]="['/']" fragment="evento">Evento</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" data-bs-dismiss="offcanvas" [routerLink]="['/']" fragment="hospedaje">Hospedaje</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" data-bs-dismiss="offcanvas" [routerLink]="['/']" fragment="orador">Orador</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" data-bs-dismiss="offcanvas" [routerLink]="['/']" fragment="agenda">Agenda</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" data-bs-dismiss="offcanvas" [routerLink]="['/']" fragment="testimonios">Testimonios</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" data-bs-dismiss="offcanvas" [routerLink]="['/']" fragment="preguntas">Preguntas</a>
+      <a class="nav-link font-space fw-normal text-dark fs-5" data-bs-dismiss="offcanvas" [routerLink]="['/resources']">Recursos</a>
     </div>
-
   </div>
   <div class="cta-nav row">
     <button class="btn-nav py-2">
