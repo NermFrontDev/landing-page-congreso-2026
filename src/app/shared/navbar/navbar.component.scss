@@ -8,6 +8,10 @@ html {
 div#staticBackdrop {
   width: 50%;
   background-color: #F9F5EC;
+
+  .nav-link {
+    cursor: pointer;
+  }
 }
 
 .btn-menu img {
