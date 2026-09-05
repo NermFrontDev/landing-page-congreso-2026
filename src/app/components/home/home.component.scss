@@ -18,7 +18,7 @@
 }
 
 .mt-content{
-  margin-top: 300px;
+  margin-top: 130px;
 }
 
 
@@ -303,6 +303,23 @@ $items-per-view: 3;
   }
 }
 
+/* ------------------ THISRT SECTION------------------ */
+
+.txt-btn{
+  color: #D5B28D;
+  border: 1.5px solid #D5B28D;
+  font-size: 18px;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+.txt-btn:hover {
+  color: white;
+  border: 1.5px solid #D5B28D;
+  background-color: #c2a88c;
+}
+
 /* ------------------ SANAR SECTION ------------------ */
 $bg-dark-preview: #515960;
 $card-white: #ffffff;
@@ -459,6 +476,11 @@ $border-radius-tab: 20px;
 
 // --- BREAKPOINT: MOBILE (Max-width: 768px) ---
 @media (max-width: 768px) {
+
+  .bg-about {
+    height: 3800px;
+  }
+
   .cta-register {
     padding: 15px 45px;
   }
@@ -806,7 +828,7 @@ img.testimonials-header-image {
     height: 820px;
   }
   .mt-content{
-    margin-top: 150px;
+    margin-top: 50px;
   }
   .img-about{
     height: 350px;
