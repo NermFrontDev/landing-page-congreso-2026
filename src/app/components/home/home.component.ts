@@ -24,8 +24,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
   listings: AirbnbListing[] = [];
 
   readonly EVENT_COORDINATES = {
-    latitude: 33.448377,
-    longitude: -112.074037,
+    latitude: 33.3977404,
+    longitude: -112.0613380,
   };
 
   currentIndex = 0;
