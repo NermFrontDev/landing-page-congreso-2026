@@ -1,6 +1,6 @@
 [
   {
-    "titulo": "Drama",
+    "titulo": "Worship",
     "horario": [
       "7:00", "pm"
     ],
@@ -9,13 +9,13 @@
       "Bienvenida"
     ],
     "categoria": "Vie 16 Oct",
-    "speaker": "Fesja Az Staff",
+    "speaker": "Praise Team",
     "locacion": "Auditorio"
   },
   {
     "titulo": "Bienvenida y rompehielos",
     "horario": [
-      "7:10", "pm"
+      "7:15", "pm"
     ],
     "tag": [
       "Suelta"
@@ -25,21 +25,21 @@
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Worship",
+    "titulo": "Drama",
     "horario": [
-      "7:20", "pm"
+      "7:25", "pm"
     ],
     "tag": [
       "Suelta"
     ],
     "categoria": "Vie 16 Oct",
-    "speaker": "Nova 7",
+    "speaker": "Arizona",
     "locacion": "Auditorio"
   },
   {
     "titulo": "Inauguración oficial",
     "horario": [
-      "7:35", "pm"
+      "7:40", "pm"
     ],
     "tag": [
       "Suelta"
@@ -49,9 +49,9 @@
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Entrevista al Pastor Josias",
+    "titulo": "Entrevista al Pastor Aguinaga",
     "horario": [
-      "7:40", "pm"
+      "7:45", "pm"
     ],
     "tag": [
       "Suelta",
@@ -62,22 +62,35 @@
     "locacion": "Auditorio"
   },
   {
+    "titulo": "Canto Especial",
+    "horario": [
+      "7:50", "pm"
+    ],
+    "tag": [
+      "Suelta",
+      "Especial"
+    ],
+    "categoria": "Vie 16 Oct",
+    "speaker": "Sureste California",
+    "locacion": "Auditorio"
+  },
+  {
     "titulo": "Tema #1",
     "horario": [
-      "7:45", "pm"
+      "7:55", "pm"
     ],
     "tag": [
       "Suelta",
       "Tema#1"
     ],
     "categoria": "Vie 16 Oct",
-    "speaker": "Pr. Josías F.",
+    "speaker": "Pr. Alex Aguinaga",
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Dinámica",
+    "titulo": "Dinámica Suelta",
     "horario": [
-      "8:25", "pm"
+      "8:35", "pm"
     ],
     "tag": [
       "Suelta",
@@ -90,26 +103,26 @@
   {
     "titulo": "Canto Final",
     "horario": [
-      "8:40", "pm"
+      "8:45", "pm"
     ],
     "tag": [
       "Suelta",
       "Nova7"
     ],
     "categoria": "Vie 16 Oct",
-    "speaker": "Nova 7",
+    "speaker": "Praise Team",
     "locacion": "Auditorio"
   },
   {
     "titulo": "Oración Final",
     "horario": [
-      "8:45", "pm"
+      "8:50", "pm"
     ],
     "tag": [
       "Suelta"
     ],
     "categoria": "Vie 16 Oct",
-    "speaker": "Pr. Josías F.",
+    "speaker": "Pr. Alex Aguinaga",
     "locacion": "Auditorio"
   },
 
@@ -123,14 +136,14 @@
     ],
     "tag": [
       "Abraza",
-      "Worship"
+      "Praise Team"
     ],
     "categoria": "Sáb 17 Oct",
     "speaker": "Nova 7",
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Bienvenida y Acción",
+    "titulo": "Bienvenida y Oración",
     "horario": [
       "9:30", "am"
     ],
@@ -143,124 +156,112 @@
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Oración",
+    "titulo": "Poesía coral",
     "horario": [
-      "9:35", "am"
-    ],
-    "tag": [
-      "Abraza"
-    ],
-    "categoria": "Sáb 17 Oct",
-    "speaker": "Fesja Az Staff",
-    "locacion": "Auditorio"
-  },
-  {
-    "titulo": "Dinámica Abraza",
-    "horario": [
-      "9:37", "am"
+      "9:40", "am"
     ],
     "tag": [
       "Abraza",
-      "Dinámica"
+      "Poesía"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "California Norte",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Foro",
+    "horario": [
+      "9:50", "am"
+    ],
+    "tag": [
+      "Abraza",
+      "Foro"
     ],
     "categoria": "Sáb 17 Oct",
     "speaker": "Elizabeth Fesja Az",
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Participación FESJAS",
-    "horario": [
-      "9:52", "am"
-    ],
-    "tag": [
-      "Abraza"
-    ],
-    "categoria": "Sáb 17 Oct",
-    "speaker": "Pendiente",
-    "locacion": "Auditorio"
-  },
-  {
-    "titulo": "Foro",
-    "horario": [
-      "9:57", "am"
-    ],
-    "tag": [
-      "Foro",
-      "Abraza"
-    ],
-    "categoria": "Sáb 17 Oct",
-    "speaker": "Panelistas",
-    "locacion": "Auditorio"
-  },
-  {
     "titulo": "Camino a Cristo(Kahoot)",
     "horario": [
-      "10:43", "am"
+      "10:40", "am"
     ],
     "tag": [
-      "Kahoot",
+      "Abraza",
+      "Kahoot"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Marlon Fesja Az",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Drama",
+    "horario": [
+      "10:50", "am"
+    ],
+    "tag": [
+      "Drama",
       "Abraza"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Fesja Az Staff",
+    "speaker": "Nevada-Utah",
     "locacion": "Auditorio"
   },
   {
     "titulo": "Anuncios y ofrendas",
     "horario": [
-      "10:50", "am"
+      "11:00", "am"
     ],
     "tag": [
       "Abraza",
-      "Anuncios",
       "Ofrendas"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Fesja Az Staff",
+    "speaker": "Praise Team",
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Worship",
+    "titulo": "Canto Especial",
     "horario": [
-      "11:00", "am"
+      "11:05", "am"
     ],
     "tag": [
       "Abraza"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Fesja Az Staff",
+    "speaker": "Claifornia Centro",
     "locacion": "Auditorio"
   },
   {
     "titulo": "Tema #2",
     "horario": [
-      "11:05", "am"
+      "11:10", "am"
     ],
     "tag": [
       "Abraza",
       "Tema#2"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Pr. Josías F.",
+    "speaker": "Pr. Alex Aguinaga",
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Participación FESJAS",
+    "titulo": "Canto Especial",
     "horario": [
-      "11:50", "am"
+      "11:55", "am"
     ],
     "tag": [
-      "Canto Especial",
-      "Abraza"
+      "Abraza",
+      "Worship"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Pendiente",
+    "speaker": "7Diez",
     "locacion": "Auditorio"
   },
   {
     "titulo": "Oración Final",
     "horario": [
-      "11:55", "am"
+      "12:00", "pm"
     ],
     "tag": [
       "Abraza",
@@ -276,12 +277,14 @@
       "12:15", "pm"
     ],
     "tag": [
-      "Lunch"
+      "Lunch",
+      "Descanso"
     ],
     "categoria": "Sáb 17 Oct",
     "speaker": "Fesja Az Staff",
     "locacion": "Comedor"
   },
+
   {
     "titulo": "Impacto Misionero",
     "horario": [
@@ -292,26 +295,26 @@
       "Impacto"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Fesja Az Staff",
+    "speaker": "Pr. Adino S.",
     "locacion": "Phoenix, Az"
   },
   {
-    "titulo": "Worship",
+    "titulo": "Concierto",
     "horario": [
       "4:30", "pm"
     ],
     "tag": [
-      "Worship",
+      "Concierto",
       "Adora"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Nova 7",
+    "speaker": "7Diez",
     "locacion": "Auditorio"
   },
   {
     "titulo": "Bienvenida con rompehielo",
     "horario": [
-      "4:40", "pm"
+      "5:00", "pm"
     ],
     "tag": [
       "Adora",
@@ -322,93 +325,109 @@
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Oración",
-    "horario": [
-      "4:45", "pm"
-    ],
-    "tag": [
-      "Adora",
-      "Oración"
-    ],
-    "categoria": "Sáb 17 Oct",
-    "speaker": "Fesja Az Staff",
-    "locacion": "Auditorio"
-  },
-  {
     "titulo": "Film Fest",
     "horario": [
-      "4:47", "pm"
+      "5:10", "pm"
     ],
     "tag": [
       "Adora",
       "Film Fest"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Pr. Cesar S.",
+    "speaker": "Fesja Comunicación",
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Boom Bíblico",
+    "titulo": "Bible Bowl",
     "horario": [
-      "4:52", "pm"
+      "5:20", "pm"
     ],
     "tag": [
       "Adora",
-      "BoomBiblico"
+      "Bible Bowl"
     ],
     "categoria": "Sáb 17 Oct",
     "speaker": "Fesja Az Staff",
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Participación FESJAS",
+    "titulo": "Worship",
     "horario": [
-      "5:32", "pm"
+      "6:00", "pm"
     ],
     "tag": [
       "Adora",
-      "Drama"
+      "Worship",
+      "Nova7"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Pendiente",
+    "speaker": "Praise Team",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Poesía coral",
+    "horario": [
+      "6:05", "pm"
+    ],
+    "tag": [
+      "Abraza",
+      "Poesía"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Nevada-Utah",
+    "locacion": "Auditorio"
+  },
+  {
+    "titulo": "Worship",
+    "horario": [
+      "6:10", "pm"
+    ],
+    "tag": [
+      "Adora",
+      "Worship",
+      "Nova7"
+    ],
+    "categoria": "Sáb 17 Oct",
+    "speaker": "Praise Team",
     "locacion": "Auditorio"
   },
   {
     "titulo": "Tema #3",
     "horario": [
-      "5:42", "pm"
+      "6:15", "pm"
     ],
     "tag": [
       "Adora",
       "Tema#3"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Pr. Josías F.",
+    "speaker": "Pr. Alex Aguinaga",
     "locacion": "Auditorio"
   },
   {
-    "titulo": "Participación FESJAS",
+    "titulo": "Canto Especial",
     "horario": [
-      "6:30", "pm"
+      "6:45", "pm"
     ],
     "tag": [
       "Adora",
       "Canto Especial"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Pendiente",
+    "speaker": "7Diez",
     "locacion": "Auditorio"
   },
   {
     "titulo": "Despedida del sábado",
     "horario": [
-      "6:35", "pm"
+      "6:50", "pm"
     ],
     "tag": [
-      "Adora"
+      "Adora",
+      "Nova7"
     ],
     "categoria": "Sáb 17 Oct",
-    "speaker": "Fesja Az Staff",
+    "speaker": "Praise Team",
     "locacion": "Auditorio"
   },
   {
@@ -449,7 +468,7 @@
       "Tema#4"
     ],
     "categoria": "Dom 18 Oct",
-    "speaker": "Pr. Josías F.",
+    "speaker": "Pr. Alex Aguinaga",
     "locacion": "Gimnasio"
   },
   {
@@ -468,7 +487,7 @@
   {
     "titulo": "Clausura y Premiación",
     "horario": [
-      "Pendiente", "am"
+      "12:30", "pm"
     ],
     "tag": [
       "Recrea",
